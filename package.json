@@ -1,8 +1,8 @@
 {
   "name": "top-api",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
+  "description": "Example of a Node.js backend with the Nest.js framework.",
+  "author": "Dmytro Halushchak <developer.bulldozer@gmail.com>",
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
