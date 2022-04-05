@@ -150,3 +150,6 @@ dist
 
 # Ethereum Node data
 .storage/
+
+# MongoDB
+mongo-data
