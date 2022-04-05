@@ -58,6 +58,18 @@ $ npm run test:e2e
 $ npm run test:cov
 ```
 
+## Additional packages
+
+```bash
+# config (and .env)
+$ npm i @nestjs/config
+# after installation you need to import ConfigModule.forRoot() in app.module.ts.
+# or you can use ConfigModule.forFeature() if you need different configs in different modules.
+# After that, you need to inject ConfigService into the class constructor, where the variable from .env will be used.
+# constructor(private readOnly configService: ConfigService)
+# and use this.configService.get('name_of_var')
+```
+
 ## Support
 
 Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
