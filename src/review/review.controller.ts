@@ -9,7 +9,7 @@ import {
   Post,
 } from '@nestjs/common';
 import { CreateReviewDto } from './dto/create-review.dto';
-import { ReviewService } from './review.service';
+import { ReviewService } from './services/review.service';
 import { REVIEW_NOT_FOUND } from './review.constants';
 
 @Controller('review')

@@ -7,7 +7,7 @@ import { TopPageSchema } from './schemas/top-page.schema';
   imports: [
     MongooseModule.forFeature([
       {
-        name: 'TopPageModel',
+        name: 'top_page_model',
         schema: TopPageSchema,
       },
     ]),

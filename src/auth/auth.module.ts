@@ -7,7 +7,7 @@ import { AuthSchema } from './schemas/auth.schema';
   imports: [
     MongooseModule.forFeature([
       {
-        name: 'AuthModel',
+        name: 'auth_model',
         schema: AuthSchema,
       },
     ]),
