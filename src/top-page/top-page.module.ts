@@ -1,7 +1,17 @@
 import { Module } from '@nestjs/common';
 import { TopPageController } from './top-page.controller';
+import { MongooseModule } from '@nestjs/mongoose';
+import { TopPageSchema } from './schemas/top-page.schema';
 
 @Module({
+  imports: [
+    MongooseModule.forFeature([
+      {
+        name: 'TopPageModel',
+        schema: TopPageSchema,
+      },
+    ]),
+  ],
   controllers: [TopPageController],
 })
 export class TopPageModule {}
